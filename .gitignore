@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
 
 # testing
 /coverage
@@ -12,6 +15,7 @@
 # next.js
 /.next/
 /out/
+/.vercel
 
 # production
 /build
@@ -26,11 +30,23 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
 
-# vercel
-.vercel
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# operating system
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# build
+dist/
